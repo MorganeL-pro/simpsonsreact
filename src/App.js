@@ -16,7 +16,6 @@ function App() {
       .get('https://simpsons-quotes-api.herokuapp.com/quotes')
       .then((response) => response.data)
       .then((data) => {
-        console.log(data[0])
         setQuote(data[0])
       });
   };
