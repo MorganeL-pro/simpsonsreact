@@ -1,12 +1,12 @@
 import React from 'react';
 import './QuoteCard.css';
 
-const QuoteCard = ({ quote, character, image }) => (
+const QuoteCard = ({quote}) => (
   <figure className="QuoteCard">
-    <img src={image} alt={character} />
+    <img src={quote.image} alt={quote.character} />
     <figcaption>
-      <blockquote>{quote}</blockquote>
-      <cite>{character}</cite>
+      <blockquote>{quote.quote}</blockquote>
+      <cite>{quote.character}</cite>
     </figcaption>
   </figure>
 );
